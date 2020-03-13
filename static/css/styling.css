@@ -1,3 +1,4 @@
+
 body {
   font-family: Helvetica;
   color: white;
@@ -10,6 +11,8 @@ body {
   padding: 20px;
   
 }
+/*-- tabela 21 */
+
 
 table.table1 {
 	width: 100%;
@@ -24,15 +27,12 @@ table.table1 {
 table.table1 th{
     height: 50px;
 	text-align: center;
-	background-color: #007399;
-
+	background-color: #004d66;
 }
 
 table.table1 td {
     height: 50px;
 	text-align: center;
-	cursor: pointer;
-	background-color: #ff8533;
 	
 }
 table.table1 tr:nth-child(even) {
@@ -78,6 +78,7 @@ table.table2 tr {
 }
 
 table.table2 tr:hover {background-color: #99ccff;}
+
 
 /* MENU */
 
@@ -143,7 +144,7 @@ div.container p {
     overflow: auto;
 }
 
-<!--/* Bordered form */-->
+/* Bordered form */
 form {
 margin: 10% auto 15% auto;
 background-color: white;

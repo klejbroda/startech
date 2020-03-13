@@ -146,9 +146,8 @@ div.container p {
 
 /* Bordered form */
 form {
-margin: 5% auto 15% auto;
+margin: auto auto 15% auto;
 background-color: white;
-
 width: 50%;
 max-width: 400px;
 border: 3px solid #007399;

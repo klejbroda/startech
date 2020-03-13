@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ARP Poisoning analysis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+
+</head>
+<body>
+
+
+
+<h1>Threat analysis detailed</h1>
+<p>Powered by Star Tech</p>
+
+<br><br><br><br><br><br>
+<h2>ARP Poisoning</h2>
+<table class="table2" style="width:100%" border="1">
+  <tr>
+    <th>Time</th>
+    <th>Protocol</th> 
+    <th>Source MAC</th>
+	<th>Flag</th>
+  </tr>
+    {% for element in analysis %}
+    <tr>
+    <td>{{ element [0] }}</td>
+    <td>{{ element [1] }}</td>
+	<td>{{ element [2] }}</td>
+	<td>{{ element [3] }}</td>
+    {% endfor %}
+  </tr>
+</table>
+
+</body>
+</html>
+
+</div>
+
+
+
+</body>
+</html>

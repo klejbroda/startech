@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Threat analysis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+</head>
+
+<body style="background-color: black">
+
+<header>
+<div class="dropdown">
+  <button class="dropbtn">Help</button>
+  <div class="dropdown-content">
+  <a href="HELPsyn.html" target=”_blank”>SYN Flood</a>
+  <a href="HELPport.html" target=”_blank”>Port Scan</a>
+  <a href="HELParp.html" target=”_blank”>ARP Poisoning</a>
+  </div>
+</div>
+</header>
+<div class="pageheader">
+<h1>Threat analysis</h1>
+<p>Powered by Star Tech</p>
+</div>
+<br><br><br><br><br><br>
+<p><b>Last 24h threats</b></p>
+
+<table class="table1" style="width:100%" border="1">
+    <tr>
+    <th width="20%">Time</th> 
+    <th>Possible threat</th>
+	<th>Details</th>
+  </tr>
+  <tr onclick="document.location = 'detailsportscanning.html';" >
+    <td>
+        {{port_analysis_time}}
+    </td>
+    <td>Port Scan</td>
+	<td onclick="window.location.href='detailsportscanning.html'" >Get details</td>
+  </tr>
+  <tr onclick="document.location = 'detailssynflood.html';">
+    <td>
+        {{arp_analysis_time}}
+    </td>
+    <td>SYN flood</td>
+	<td onclick="window.location.href='detailssynflood.html'" >Get details</td>
+  </tr>
+  <tr onclick="document.location = 'detailsarp.html';">
+    <td>
+        {{syn_analysis_time}}
+    </td>
+    <td>ARP Poisoning</td>
+	<td onclick="window.location.href='detailsarp.html'" >Get details</td>
+  </tr>
+  </table>
+  <p><b>Last week threats</b></p>
+  <table class="table2" style="width:100%" border="1">
+  <tr onclick="document.location = 'detailsarp.html';">
+    <td width="20%">3/12/2020, 5:54:35 PM</td>
+    <td>ARP Poisoning</td>
+	<td onclick="window.location.href='detailsarp.html'" >Get details</td>
+  </tr>
+  <tr onclick="document.location = 'detailsportscanning.html';">
+    <td width="20%">3/10/2020, 4:04:59 PM</td>
+    <td>Port Scan</td>
+	<td onclick="window.location.href='detailsportscanning.html'">Get details</td>
+  </tr>
+  <tr onclick="document.location = 'detailsportscanning.html';">
+    <td width="20%">3/09/2020, 8:17:39 AM</td>
+    <td>Port Scan</td>
+	<td onclick="window.location.href='detailsportscanning.html'">Get details</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

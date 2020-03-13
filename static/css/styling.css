@@ -1,0 +1,203 @@
+body {
+  font-family: Helvetica;
+  color: white;
+  background-color: black;
+  background-image: width: 100%;
+  background: url("background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  padding: 20px;
+  
+}
+
+table.table1 {
+	width: 100%;
+	border: 10px;
+	border-color: white;
+	overflow-x: auto;
+	font-color: white;
+	background-color: #004d66;
+	
+}
+
+table.table1 th{
+    height: 50px;
+	text-align: center;
+	background-color: #007399;
+
+}
+
+table.table1 td {
+    height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #ff8533;
+	
+}
+table.table1 tr:nth-child(even) {
+	background-color: #ffa366;
+	background-opacity: 0.8;
+}
+
+table.table1 tr {
+	cursor: pointer;
+	background-color: #ff8533;
+}
+
+table.table1 tr:hover {background-color: #99ccff;}
+
+/*-- tabela 2 */
+
+table.table2 {
+	width: 100%;
+	border: 10px;
+	border-color: white;
+	overflow-x: auto;
+	font-color: white;
+	background-color: #004d66;
+	
+}
+
+table.table2 th{
+    height: 50px;
+	text-align: center;
+}
+table.table2 td {
+    height: 50px;
+	text-align: center;
+	
+}
+table.table2 tr:nth-child(even) {
+	background-color: #007399;
+	background-opacity: 0.8;
+}
+
+table.table2 tr {
+	cursor: pointer;
+}
+
+table.table2 tr:hover {background-color: #99ccff;}
+
+/* MENU */
+
+.dropbtn {
+  background-color: #009fd4;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+  float: right;
+ 
+}
+
+.dropdown-content {
+  font-size: 14px;
+  text-align: right;
+  display: none;
+  position: absolute;
+  background-color: #009fd4;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left:auto;
+  right:0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 7px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ff8533}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ff8533;
+}
+      }
+/*strony help*/
+
+}
+header {
+	width: 100%;
+	
+}
+div.container p {
+	
+    width: 50%;
+    height: 45%;
+	max-height: 350px;
+	min-width: 400px;
+    overflow: auto;
+}
+
+<!--/* Bordered form */-->
+form {
+margin: 10% auto 15% auto;
+background-color: white;
+
+width: 50%;
+max-width: 400px;
+border: 3px solid #007399;
+font-family: arial black;
+color: #4d4d4d;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #007399;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+opacity: 0.8;
+}
+
+
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+width: 40%;
+border-radius: 50%;
+border: 5px;
+border-color: #f44336;
+}
+
+/* Add padding to containers */
+.container {
+padding: 16px;
+}

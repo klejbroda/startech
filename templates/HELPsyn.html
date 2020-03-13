@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+</head>
+
+<body style="background-color: black">
+<header>
+
+		<h1>SYN flood</h1>
+		<br><br>
+</header>
+	<div class="container">
+        <p>A SYN flood is a form of <b>denial-of-service</b> attack in which an attacker sends a succession of SYN requests to a target's system in an attempt to consume enough server resources to make the system unresponsive to legitimate traffic.
+		<br><br>
+	Normally when a client attempts to start a TCP connection to a server, the client and server exchange a series of messages which normally runs like this:
+<br><br>
+The client requests a connection by sending a SYN (synchronize) message to the server.<br><br>
+The server acknowledges this request by sending SYN-ACK back to the client.
+The client responds with an ACK, and the connection is established.
+This is called the TCP three-way handshake, and is the foundation for every connection established using the TCP protocol.
+<br><br>
+A SYN flood attack works by not responding to the server with the expected ACK code. The malicious client can either simply not send the expected ACK, or by spoofing the source IP address in the SYN, causing the server to send the SYN-ACK to a falsified IP address – which will not send an ACK because it "knows" that it never sent a SYN.
+<br><br>
+The server will wait for the acknowledgement for some time, as simple network congestion could also be the cause of the missing ACK. However, in an attack, the half-open connections created by the malicious client bind resources on the server and may eventually exceed the resources available on the server. At that point, the server cannot connect to any clients, whether legitimate or otherwise. This effectively denies service to legitimate clients. Some systems may also malfunction or crash when other operating system functions are starved of resources in this way.</p>
+    </div>
+
+ 
+</form>
+</body>
+</html>

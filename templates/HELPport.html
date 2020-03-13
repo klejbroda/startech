@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+</head>
+
+<body style="background-color: black">
+<header>
+
+		<h1>Port Scan</h1>
+		<br><br>
+</header>
+	<div class="container">
+        <p>A port scan is an attack that sends client requests to a range of server port addresses on a host, with the goal of finding an active port and exploiting a known vulnerability of that service. Scanning, as a method for discovering exploitable communication channels, has been around for ages. The idea is to probe as many listeners as possible, and keep track of the ones that are receptive or useful to your particular need.<br><br>
+		Types of Scanning:
+ 
+<br><br>
+The following are some of the common type of scanning, for Network, Host and Port detection.
+<br><br>
+TCP connect scanning: TCP connect scanning is the most basic form of TCP scanning. The connect() system call provided by the operating system is used to open a connection to any port on the target machine. If the port is listening, connect() scanning will succeed, otherwise the port will not be reachable.
+<br><br>
+TCP SYN scanning: TCP SYN scanning is also known as "half-open" scanning, as the originator / attacker does not open a full TCP connection. The attacker sends a SYN packet and wait for a response. A SYN|ACK response from the target indicates the port is listening and as soon as a SYN|ACK is received the originator or the attacker sends a RST response.
+<br><br>
+TCP FIN scanning: Most of the firewalls and IPS devices moniter, detect and filter SYN based scanning. But many firewalls and IPS devices allow FIN packets. When the FIN packets are sent by the attacker to the target, the closed ports reply with the RST packet response, whereas open ports ignore the FIN packets sent by the attacker. While this method works in in the unix based systems, Microsoft windows based operating systems send RST packet responses to the attacker in the both the conditions whether the port is closed or open. Hence it could be also used to distinguish between windows and Unix hosts.
+<br><br>
+Fragmentation scanning: Fragmentation scanning is performed for evading the firewalls and other packet filtering devices by sending the TCP headers in small tiny fragments, which may confuse the firewalls and other devices when processing packets. While many firewalls can queue the packets for assembling, this type of scanning can consume the processing power of the victim host or the devices which are in the front of the victim IP addresses.
+<br><br>
+ </p>
+    </div>
+
+ 
+</form>
+</body>
+</html>

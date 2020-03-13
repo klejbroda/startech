@@ -1,10 +1,11 @@
 from reader import LogReader
 import datetime
+import pathlib
 
 class SynFloodReader(LogReader):
 
     def __init__(self):
-        self.file = "synFlood.csv"
+        self.file = str(pathlib.Path(__file__).parent.absolute()) + "/synFlood.csv"
 
     def create_dataset(self):
         with open(self.file, "r") as self.file:

@@ -1,10 +1,11 @@
 import sqlite3
 from export_to_db import ExportToDB
+import pathlib
 
 class SynFloodExport(ExportToDB):
 
     def __init__(self):
-        self._conn = sqlite3.connect("SynFloodRepository.db")
+        self._conn = sqlite3.connect(str(pathlib.Path(__file__).parent.absolute()) + "/SynFloodRepository.db")
         self.cursor = self._conn.cursor()
 
     def __del__(self):

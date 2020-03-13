@@ -1,9 +1,10 @@
 import sqlite3
+import pathlib
 
 class ArpAnalyzer:
 
     def __init__(self):
-        self._conn = sqlite3.connect("ArpPoisoningRepository.db")
+        self._conn = sqlite3.connect(str(pathlib.Path(__file__).parent.absolute()) + "/ArpPoisoningRepository.db")
         self.cursor = self._conn.cursor()
 
     def __del__(self):

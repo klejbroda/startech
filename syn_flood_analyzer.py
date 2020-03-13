@@ -1,10 +1,11 @@
 import sqlite3
 from collections import Counter
+import pathlib
 
 class SynFloodAnalyzer:
 
     def __init__(self):
-        self._conn = sqlite3.connect("SynFloodRepository.db")
+        self._conn = sqlite3.connect(str(pathlib.Path(__file__).parent.absolute()) + "/SynFloodRepository.db")
         self.cursor = self._conn.cursor()
         self.syn_requests = None
         self.ip_list = None

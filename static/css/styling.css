@@ -83,10 +83,10 @@ table.table2 tr:hover {background-color: #99ccff;}
 /* MENU */
 
 .dropbtn {
-  background-color: #009fd4;
+  background-color: #004d66;
   color: white;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   border: 5px;
   cursor: pointer;
 }
@@ -103,8 +103,7 @@ table.table2 tr:hover {background-color: #99ccff;}
   text-align: right;
   display: none;
   position: absolute;
-  background-color: #009fd4;
-  min-width: 120px;
+  background-color: #004d66;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   left:auto;
@@ -118,14 +117,14 @@ table.table2 tr:hover {background-color: #99ccff;}
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ff8533}
+.dropdown-content a:hover {background-color: #99ccff}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #ff8533;
+  background-color: #99ccff;
 }
       }
 /*strony help*/
@@ -139,7 +138,7 @@ div.container p {
 	
     width: 50%;
     height: 45%;
-	max-height: 350px;
+	max-height: 320px;
 	min-width: 400px;
     overflow: auto;
 }
@@ -169,7 +168,7 @@ box-sizing: border-box;
 button {
 background-color: #007399;
 color: white;
-padding: 14px 20px;
+padding: 10px 20px;
 margin: 8px 0;
 border: none;
 cursor: pointer;
@@ -200,4 +199,17 @@ border-color: #f44336;
 /* Add padding to containers */
 .container {
 padding: 16px;
+}
+
+a:link, a:visited {
+  background-color: #004d66;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #99ccff;
 }
